@@ -28,7 +28,7 @@ async def get_questions(sport: str, ctx: Context) -> str:
     await ctx.info(f"Processing {sport} data...")
 
     # Loading dataset and generating answer
-    subset_data = load_dataset(DATASET_NAME, sport, "train[:10]")
+    subset_data = load_dataset(DATASET_NAME, sport, split="train[:10]")
     data = [
         f"question: {s_data['question']}, answer: {s_data['answer']} "
         for s_data in subset_data
