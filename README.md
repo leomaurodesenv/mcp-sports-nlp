@@ -1,10 +1,12 @@
 # mcp-sports-nlp
 
-This is a learning repository about the Model Context Protocol (MCP) and its application for accessing Sports Datasets.
+This is a learning repository about the Model Context Protocol (MCP) and its application for accessing Sports Datasets, named QASports.
+QASports is the first large sports-themed question answering dataset counting over 1 million questions and answers about 124k preprocessed wiki pages, using as documents the wiki of 20 of the most popular sports in the world, like Soccer, American Football, Basketball, Cricket, and so on.
+In this MCP server, you can make questions about the QASports dataset. For example,
 
 ```mermaid
 graph TD;
-    nodeId(This is a node with rounded corners A) --> nodeId(This is a node with rounded corners B);
+    A(Question :: Show me a summary of questions about handball in qasports dataset) --> B(Answer :: Based on the handball questions available in qasports, here's a summary of the types of questions covered: historical events, teams and clubs, player movements, contract signings, and tournament data...);
 ```
 
 ## What is Model Context Protocol (MCP)?
