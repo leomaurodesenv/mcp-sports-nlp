@@ -1,4 +1,8 @@
-# mcp-sports-nlp
+# 🎓 mcp-sports-nlp
+
+[![GitHub](https://img.shields.io/static/v1?label=Code&message=GitHub&color=blue&style=flat-square)](https://github.com/leomaurodesenv/mcp-sports-nlp)
+[![MIT license](https://img.shields.io/static/v1?label=License&message=MIT&color=blue&style=flat-square)](LICENSE)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/leomaurodesenv/mcp-sports-nlp/continuous-integration.yml?label=Build&style=flat-square)](https://github.com/leomaurodesenv/mcp-sports-nlp/actions/workflows/continuous-integration.yml)
 
 This is a learning repository about the Model Context Protocol (MCP) and its application for accessing Sports Datasets, named QASports.
 QASports is the first large sports-themed question answering dataset counting over 1 million questions and answers about 124k preprocessed wiki pages, using as documents the wiki of 20 of the most popular sports in the world, like Soccer, American Football, Basketball, Cricket, and so on.
