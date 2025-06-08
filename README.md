@@ -2,6 +2,11 @@
 
 This is a learning repository about the Model Context Protocol (MCP) and its application for accessing Sports Datasets.
 
+```mermaid
+graph TD;
+    nodeId(This is a node with rounded corners A) --> nodeId(This is a node with rounded corners B);
+```
+
 ## What is Model Context Protocol (MCP)?
 
 "MCP is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools." ([modelcontextprotocol](https://modelcontextprotocol.io/introduction)) Its structure is composed by:
@@ -14,6 +19,7 @@ This is a learning repository about the Model Context Protocol (MCP) and its app
 This repository is structured as follows:
 
 - `weather/`: Contains code related to accessing and processing weather data, based on [quickstarter server](https://modelcontextprotocol.io/quickstart/server).
+- `qasports/`: Contains code related to accessing and processing sports data, based on [qasports](https://huggingface.co/datasets/leomaurodesenv/QASports2).
 
 ## Adding the Server to Claude AI (or other MCP Hosts)
 
