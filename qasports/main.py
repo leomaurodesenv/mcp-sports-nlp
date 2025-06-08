@@ -33,10 +33,10 @@ async def get_questions(sport: str, ctx: Context) -> str:
         f"question: {s_data['question']}, answer: {s_data['answer']} "
         for s_data in subset_data
     ]
-    summary = await ctx.sample(f"Summarize: {'\n'.join(data)[:500]}")
+    summary = f"Summarize: {'\n'.join(data)[:500]}"
 
     # Return summary text
-    return summary.text
+    return summary
 
 
 if __name__ == "__main__":
