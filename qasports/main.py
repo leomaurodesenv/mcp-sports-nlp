@@ -5,18 +5,18 @@ from mcp.server.fastmcp import FastMCP, Context
 
 DATASET_NAME = "leomaurodesenv/QASports2"
 mcp = FastMCP("QASports2")
-dataset = load_dataset(DATASET_NAME)
+dataset = load_dataset(DATASET_NAME, "all", split="train[:10]")
 subsets = [hf_link.split("/")[-3] for hf_link in dataset.download_checksums.keys()]
 
 
-@mcp.tool
+@mcp.tool()
 async def get_sports() -> str:
     """Get a list of available sports."""
     global subsets
     return "Available sports: " + "\n- ".join(subsets)
 
 
-@mcp.tool
+@mcp.tool()
 async def get_questions(sport: str, ctx: Context) -> str:
     """Get questions for a given sport.
 
