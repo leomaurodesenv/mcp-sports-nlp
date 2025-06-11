@@ -2,6 +2,13 @@ name: "Continuous Integration"
 run-name: Running tests on "${{ github.ref }}" by "${{ github.actor }}"
 on:
   push:
+    branches:
+      - 'main'
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
   workflow_dispatch:
   schedule:
   - cron: "0 12 1 * *"
@@ -11,6 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: curl -LsSf https://astral.sh/uv/install.sh | sh
+      - uses: astral-sh/setup-uv@v5
       - run: cd qasports && uv sync
       - run: cd qasports && uv run ruff check .
